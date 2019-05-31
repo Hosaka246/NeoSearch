@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title></title>
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+<form action = "searchdata.php" method = "post"><input size="40" type="text" required name="NAIYOU"><input type="radio" name="SEARCH" value="normal">通常検索　<input type="radio" name="SEARCH" value="pittari">完全一致<br>
+<div style="display:table;  width:100%;">
+    <div style="display:table-cell; width:30%;">
+</div>
+  <div style="display:table-cell; width:25%;
+	text-align : left;
+" align="left">
+<input type="checkbox" name="WordPress" value="-Wordpress">WordPressを除外<br>
+  <input type="checkbox" name="Reserved" value="-reserved">「Reserved」を除外<br>
+  <hr>
+  <input type="radio" name="IKAGA" value="0" checked>「いかがでしたか」で除外<br>
+  <input type="radio" name="IKAGA" value="1">「いかがでしたか」「いかがですか」「いかがでしょうか」で除外<br>
+  <input type="radio" name="IKAGA" value="2">「いかが」で除外<br>
+  <input type="radio" name="IKAGA" value="3">指定しない</div>
+  <div style="display:table-cell; width:25%;
+	text-align : left;
+" align="left"><input type="radio" checked name="FILETYPE" value="0">html検索<br>
+  <input type="radio" name="FILETYPE" value="1"> php検索<br>
+  <input type="radio" name="FILETYPE" value="2"> pdf検索<br>
+  <input type="radio" name="FILETYPE" value="3">指定しない<br>
+  <hr>
+  <input type="checkbox" name="MATOME" value="-まとめ">「まとめ」を除外<br>
+  </div>
+  <div style="display:table-cell; width:15%;">
+	</div>
+</div>
+  <br>
+  <br>
+<input type="submit" name="検索" value="検索"><input type="reset" name="リセット" value="リセット">
+</form>
+</html>
